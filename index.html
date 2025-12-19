@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie - Responsive Food Delivery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">GOOD FOOD<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#service">Service</a> 
+            <a href="#review">Review</a>
+            <a href="#order">Order</a>
+            <a href="#contact">Contacts</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-cart-shopping" id="cart-icon"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+        </div>
+    </header>
+
+    <div class="cart">
+        <h2 class="cart-title">Your Cart</h2>
+        <div class="cart-content">
+        </div>
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">$0.00</div>
+        </div>
+        <button type="button" class="btn-buy">Place Order</button>
+        <i class="fas fa-xmark" id="close-cart"></i> 
+    </div>
+
+    <form action="" id="search-form"> 
+        <input type="search" placeholder="Search food items..." name="" id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close-search"></i> 
+    </form>
+    <section class="home" id="home">
+        <div class="home-slider">
+            <div class="wrapper">
+                <div class="slide">
+                    <div class="content">
+                        <h1>Enjoy Your <br>Delicious <span>Food</span></h1>
+                        <p>We fill your tummy with delicious food with fast delivery.</p>
+                        <a href="#menu" class="btn order-now">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/k.jpeg" alt="Delivery Boy with Pizza Boxes">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service" id="service">
+        <h1 class="heading">How Does It Work?</h1>
+        
+        <div class="box-container">
+            <div class="box">
+                <img src="images/easy-to-order.png" alt="Easy to Order Icon">
+                <h3>Easy to Order</h3>
+                <p>You only need a few steps in ordering food.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/fast-delivery.png" alt="Fast Delivery Icon">
+                <h3>Fast Delivery</h3>
+                <p>Delivery that is always on time, even faster.</p>
+            </div>
+            
+            <div class="box">
+                <img src="images/best-quality.png" alt="Best Quality Icon">
+                <h3>Best Quality</h3>
+                <p>Not only fast for us in quality is also number one.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="menu" id="menu">
+        <h3 class="sub-heading">Our Menu</h3>
+        <h1 class="heading">Popular Dishes</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/burger.png" alt="Double Beef Burger">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Double Beef Burger</h3>
+                    <span class="price">₹119</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/fried-chicken.png" alt="Fried Chicken">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Fried Chicken</h3>
+                    <span class="price">₹350</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/chicken-roll.png" alt="Chicken Roll">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Chicken Roll</h3>
+                    <span class="price">₹175</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="images/lasagna.png" alt="Chicken Lasagna">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Chicken Lasagna</h3>
+                    <span class="price">₹239</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/pizza.png" alt="pizza">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Pizza</h3>
+                    <span class="price">₹199</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/french-fry.png" alt="french-fry">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">French Fry</h3>
+                    <span class="price">₹100</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/sandwich.png" alt="sandwich">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Sandwich</h3>
+                    <span class="price">₹99</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/spring-roll.png" alt="spring-roll">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Spring Roll</h3>
+                    <span class="price">₹129</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/spaghetti.png" alt="spaghetti">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Spaghetti</h3>
+                    <span class="price">₹199</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/naan.png" alt="naan">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Naan</h3>
+                    <span class="price">₹75</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/paneer-butter-masala.png" alt="paneer-butter-masala">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Paneer Butter Masala</h3>
+                    <span class="price">₹350</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="image">
+                    <img src="images/momo.png" alt="momo">
+                    <a href="#" class="fas fa-heart"></a>
+                </div>
+                <div class="content">
+                    <h3 class="product-title">Momo</h3>
+                    <span class="price">₹75</span>
+                    <i class="fa-solid fa-cart-plus add-cart"></i>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="review" id="review">
+        <h3 class="sub-heading">Customer's Review</h3>
+        <h1 class="heading">What They Say</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="user">
+                    <img src="images/profile1.jpg" alt="Customer Avatar 1">
+                    <div class="user-info">
+                        <h3>Abhishek Kashyap</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>The delivery was incredibly fast, and the double beef burger was juicy and delicious! Highly recommend Foodie for a quick and quality meal.</p>
+            </div>
+
+            <div class="box">
+                <div class="user">
+                    <img src="images/profile2.jpg" alt="Customer Avatar 2">
+                    <div class="user-info">
+                        <h3>Daiji Kalita</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>I ordered the Chicken Lasagna, and the quality was exceptional. The ingredients felt fresh, and the portion size was generous. Great service!</p>
+            </div>
+
+            <div class="box">
+                <div class="user">
+                    <img src="images/profile1.jpeg" alt="Customer Avatar 3">
+                    <div class="user-info">
+                        <h3>Robert Brown</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p>Finally found a reliable spot for late-night snacks. Their Pizza arrived hot and perfectly cooked. The best quality food, even at midnight.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="order" id="order">
+        <h3 class="sub-heading">Order Now</h3>
+        <h1 class="heading">Fast Home Delivery</h1>
+
+        <form action="" id="order-form">
+            <div class="inputBox">
+                <div class="input">
+                    <span>Your Name</span>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="input">
+                    <span>Your Number</span>
+                    <input type="number" placeholder="Enter your number" required>
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Your Order</span>
+                    <input type="text" placeholder="Enter food name" required>
+                </div>
+                <div class="input">
+                    <span>Additional Food</span>
+                    <input type="text" placeholder="Extra items (optional)">
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>How Much</span>
+                    <input type="number" placeholder="How many orders" min="1" required>
+                </div>
+                <div class="input">
+                    <span>Date and Time</span>
+                    <input type="datetime-local" required>
+                </div>
+            </div>
+            <div class="inputBox">
+                <div class="input">
+                    <span>Your Address</span>
+                    <textarea name="" placeholder="Enter your address" id="" cols="30" rows="10" required></textarea>
+                </div>
+                <div class="input">
+                    <span>Your Message</span>
+                    <textarea name="" placeholder="Enter your message" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <input type="submit" value="Order Now" class="btn">
+        </form>
+    </section>
+
+
+
+    <section class="contact" id="contact">
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">India</a>
+                <a href="#">USA</a>
+                <a href="#">Japan</a>
+                <a href="#">France</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#service">Service</a>
+                <a href="#review">Review</a>
+                <a href="#order">Order</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i> +111-222-3333</a>
+                <a href="#"><i class="fas fa-envelope"></i> foodie@gmail.com</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Mumbai, India - 400001</a>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="credit">
+            Copyright &copy; 2025 by <span>GOOD FOOD</span>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
